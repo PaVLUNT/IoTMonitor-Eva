@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_vertical" android:orientation="vertical" android:padding="28dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="IoT Cámara de Frío" android:textSize="28sp" android:textStyle="bold" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp" android:text="Inicia sesión para continuar" />
+
+    <EditText android:id="@+id/etUser" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Usuario" android:importantForAutofill="no" android:inputType="textNoSuggestions" />
+    <EditText android:id="@+id/etPass" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Contraseña (mín. 8 caracteres)" android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <Button android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" android:text="Ingresar" />
+    <Button android:id="@+id/btnRegister" style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Crear cuenta" />
+    <TextView android:id="@+id/tvLoginMsg" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:textColor="#C62828" />
+</LinearLayout>

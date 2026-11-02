@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical" android:orientation="horizontal">
+        <TextView android:id="@+id/tvWelcome" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:textSize="18sp" android:textStyle="bold" />
+        <Button android:id="@+id/btnLogout" style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Salir" />
+    </LinearLayout>
+
+    <RadioGroup android:id="@+id/rgRole" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/rbNode" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:checked="true" android:text="Nodo sensor" />
+        <RadioButton android:id="@+id/rbPanel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" android:text="Panel de control" />
+    </RadioGroup>
+
+    <EditText android:id="@+id/etPin" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Clave de enlace compartida (mín. 6)" android:importantForAutofill="no"
+        android:inputType="numberPassword" />
+    <Button android:id="@+id/btnConnect" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Esperar conexión" />
+    <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="Desconectado" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:orientation="horizontal">
+        <TextView android:id="@+id/tvTemp" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="-- °C" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvHum" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="-- %" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvFan" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Vent: --" android:textSize="24sp" android:textStyle="bold" />
+    </LinearLayout>
+    <TextView android:id="@+id/tvAlert" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="#C62828" android:textStyle="bold" />
+    <Button android:id="@+id/btnFan" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:enabled="false" android:text="Alternar ventilador (solo panel)" />
+    <TextView android:id="@+id/tvAvg" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:text="Promedio histórico: --" />
+    <ListView android:id="@+id/lvHistory" android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+Evaluación Sumativa Unidad 2 - TI3042 Aplicaciones Móviles para IoT
+Alumno: Pablo Allendes
+Link GitHub con el código de la aplicación:
+https://github.com/<TU-USUARIO>/IoTMonitor   <-- reemplazar por tu repositorio
